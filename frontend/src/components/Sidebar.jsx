@@ -11,7 +11,7 @@ const Sidebar = () => {
   }
 
   return (
-    <div className="d-grid gap-2 col-4 mx-auto">
+    <div className="d-grid gap-2 sidebars col-4 mx-auto">
       <hr />
       <button
         className="btn btn-outline-dark"

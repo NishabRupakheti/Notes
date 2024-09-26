@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import Context from "../Stores/contextProvider";
 import axios from "axios";
+import styles from '../styles/Form.module.css'
 
 const Login = () => {
   const [emailf, setemailf] = useState("");
@@ -35,7 +36,7 @@ const Login = () => {
 
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid mainContainer">
         <form className="mx-auto">
           <h4
             className="text-center alert alert-info"

@@ -3,8 +3,10 @@ import image from '../assets/hmm.jpeg'
 
 const NoDTA = () => {
   return (
-    <div className='container  h-100 d-flex justify-content-center ' >
-        <img src={image} alt="Photo" />
+    <div className='imageContainer h-100 d-flex justify-content-center' >
+        <picture>
+          <img src={image} className='img' alt='image' />
+        </picture>
     </div>
   )
 }

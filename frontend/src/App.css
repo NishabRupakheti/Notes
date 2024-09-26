@@ -1,12 +1,14 @@
 .mainCont{
-  border-left: 2px solid;
-  border-right: 2px solid;
+  border: 2px solid;
   border-radius: 12px;
   width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
+  position: relative;
+  top: 60px;
+  font-size: larger;
 }
 
 .displayContainer{
@@ -26,10 +28,54 @@
 .reglog{
   border-left: 1px solid ;
   border-right: 1px solid;
-  width: 70%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: auto;
   padding: 15px;
+  position: relative;
+  top: 10rem;
+}
+
+@media screen and (max-width:350px) {
+  body{
+    font-size: 12px;
+  }
+  .reglog{
+    border: none;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+  }
+}
+
+@media screen and (max-width:765px){
+  .mainCont{
+    flex-direction: column;
+    border: none;
+    height: auto;
+    width: 100vw;
+  }
+  .displayContainer{
+    font-size: small;
+    border: none;
+    height: auto;
+    width: 100%;
+
+  }
+  .sidebars{
+    display: flex;
+    width: 70%;
+  }
+  .img{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:765px) and (max-width:920px) {
+  .img{
+    width: 100%;
+    position: relative;
+    top: 23%;
+  }
 }
