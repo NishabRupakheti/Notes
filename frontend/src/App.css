@@ -64,8 +64,8 @@
 
   }
   .sidebars{
-    display: flex;
     width: 70%;
+    
   }
   .img{
     width: 100%;

@@ -78,7 +78,7 @@ const GetCompo = () => {
           <div
             key={item._id}
             className="card shadow-sm mb-4"
-            style={{ width: "32rem" }}
+            style={{ width: "100%" }}
           >
             <div className="card-header text-center bg-primary text-white">
               <strong>ID:</strong> {item._id}
