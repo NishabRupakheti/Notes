@@ -5,7 +5,7 @@ const NoDTA = () => {
   return (
     <div className='imageContainer h-100 d-flex justify-content-center' >
         <picture>
-          <img src={image} className='img' alt='image' />
+          <img src={image} className='img-fluid' alt='image' />
         </picture>
     </div>
   )

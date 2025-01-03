@@ -16,7 +16,7 @@ const AuthenticationDis = () => {
       </div>
     </div>
   ) : (
-    <div className="reglog container mt-5 ">
+    <div className="reglog container">
       <Logregstate />
     </div>
   );

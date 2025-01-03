@@ -77,20 +77,21 @@ const GetCompo = () => {
         data.map((item) => (
           <div
             key={item._id}
-            className="card shadow-sm mb-4"
+            className="card shadow-lg mb-4 rounded"
             style={{ width: "100%" }}
           >
-            <div className="card-header text-center bg-primary text-white">
+            <div className="card-header text-center bg-primary text-white rounded-top">
               <strong>ID:</strong> {item._id}
             </div>
             <div className="card-body">
               <h5 className="card-title d-flex justify-content-between align-items-center">
                 {item.title}
                 <FaRegEdit
-                  style={{ cursor:"pointer"}}
+                  style={{ cursor: "pointer", color: "#007bff" }}
                   onClick={() => spawnInputField(item._id)}
                 />
               </h5>
+
               {showInput[item._id] && (
                 <input
                   type="text"
@@ -98,24 +99,31 @@ const GetCompo = () => {
                   onChange={(e) => handleInputChange(item._id, e.target.value)}
                   className="form-control mb-3"
                   placeholder="Edit"
+                  style={{ borderRadius: "5px", borderColor: "#007bff" }}
                 />
               )}
+
               <p className="card-text">{item.message}</p>
+
               <div className="d-flex justify-content-between">
-                <a
+                <button
                   href="#"
-                  className="btn btn-danger"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  className="btn btn-danger btn-sm"
                   onClick={() => handleDelete(item._id)}
+                  style={{ transition: "background-color 0.3s ease" }}
                 >
                   Delete
-                </a>
-                <a
+                </button>
+                <button
                   href="#"
-                  className="btn btn-secondary"
+                  className="btn btn-secondary btn-sm"
                   onClick={() => handleUpdate(item._id)}
+                  style={{ transition: "background-color 0.3s ease" }}
                 >
                   Update
-                </a>
+                </button>
               </div>
             </div>
           </div>
