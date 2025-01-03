@@ -39,15 +39,15 @@ body {
   padding: 15px;
 }
 
-@media screen and (max-width:350px) {
+@media screen and (min-width:350px) {
   body {
     font-size: 12px;
   }
 
   .reglog {
+    margin-top: 4em;
+    width: 100%;
     border: none;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
   }
 }
 
